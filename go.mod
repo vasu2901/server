@@ -1,6 +1,6 @@
 module github.com/BalkanID-University/vit-2025-summer-engineering-internship-task-vasu2901/tree/main/backend
 
-go 1.23.0
+go 1.21
 
 require (
 	github.com/andybalholm/brotli v1.0.5 // indirect
