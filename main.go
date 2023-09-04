@@ -23,27 +23,6 @@ func main(){
 	app.Get("/", func(c *fiber.Ctx) error{
 		return c.SendString("Hello World")
 	})
-	app.Get("/Login", func(c *fiber.Ctx) error {
-        return c.SendFile("./templates/Login.html")
-    })
-	app.Get("/Signin",func(c *fiber.Ctx) error {
-        return c.SendFile("./templates/Signin.html")
-    })
-	app.Get("/Authen", func(c *fiber.Ctx) error {
-		return c.SendFile("./templates/Authen.html")
-	})
-	app.Get("/userhome", func(c *fiber.Ctx)error{
-		return c.SendFile("./templates/UserHome.html")
-	})
-	app.Get("/adminhome", func(c *fiber.Ctx)error{
-		return c.SendFile("./templates/AdminHome.html")
-	})
-	app.Get("/addabook", func(c *fiber.Ctx)error{
-		return c.SendFile("./templates/Addabook.html")
-	})
-	app.Get("/updatestock", func(c *fiber.Ctx)error{
-		return c.SendFile("./templates/UpdateStock.html")
-	})
 	routes.Setup(app)
 	app.Listen(":"+PORT)
 }
